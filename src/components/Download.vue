@@ -3,14 +3,14 @@
     <ul>
       <li>
         <a href="">
-          <ion-icon name="logo-apple"></ion-icon>
+          <ion-icon name="logo-apple" :style="iphoneCOlor"></ion-icon>
           <span>Free downoad for iPhone</span></a
         >
       </li>
       <li><img src="../assets/images/music.png" alt="divider image" /></li>
       <li>
         <a href="">
-          <ion-icon name="logo-android"></ion-icon>
+          <ion-icon name="logo-android" :style="androidColor"></ion-icon>
           <span>Free downoad for Android </span></a
         >
       </li>
@@ -18,7 +18,10 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+const iphoneCOlor = "color: rgb(184, 172, 172)";
+const androidColor = "color: rgb(75, 228, 126)";
+</script>
 
 <style scoped>
 ul {

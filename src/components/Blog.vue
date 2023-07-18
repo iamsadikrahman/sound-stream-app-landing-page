@@ -12,9 +12,9 @@
             <time datetime="">05 Fab, 2022</time>
           </figure>
           <div>
-            <h3>See How People Are Using Your Website With Hotjar</h3>
+            <h3>{{ posts[0].title }}</h3>
             <p>
-              Each time a digital asset is purchased or sold, Sequoir donates a percentage
+              {{ posts[0].summary }}
             </p>
           </div>
         </a>
@@ -29,10 +29,8 @@
             <time datetime="">06 Fab, 2022</time>
           </figure>
           <div>
-            <h3>5 Tips to Write Your Own Website Copy</h3>
-            <p>
-              Each time a digital asset is purchased or sold, Sequoir donates a percentage
-            </p>
+            <h3>{{ posts[1].title }}</h3>
+            <p>{{ posts[1].summary }}</p>
           </div>
         </a>
       </li>
@@ -46,10 +44,8 @@
             <time datetime="">10 Fab, 2022</time>
           </figure>
           <div>
-            <h3>5 Brilliant Apps That Will Make Your Life Better</h3>
-            <p>
-              Each time a digital asset is purchased or sold, Sequoir donates a percentage
-            </p>
+            <h3>{{ posts[2].title }}</h3>
+            <p>{{ posts[2].summary }}</p>
           </div>
         </a>
       </li>
@@ -57,7 +53,28 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+const posts = [
+  {
+    title: "See How People Are Using Your Website With Hotjar",
+
+    summary:
+      "Each time a digital asset is purchased or sold, Sequoir donates a percentage",
+  },
+  {
+    title: "5 Tips to Write Your Own Website Copy",
+
+    summary:
+      "Each time a digital asset is purchased or sold, Sequoir donates a percentage",
+  },
+  {
+    title: "5 Brilliant Apps That Will Make Your Life Better",
+
+    summary:
+      "Each time a digital asset is purchased or sold, Sequoir donates a percentage",
+  },
+];
+</script>
 
 <style scoped>
 ul {
