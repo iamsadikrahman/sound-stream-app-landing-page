@@ -2,16 +2,12 @@
   <section>
     <ul>
       <li>
-        <h3>Apple AirPlay</h3>
-        <p>
-          Each time a digital asset is purchased or sold, Sequoir is donates a percentage
-        </p>
+        <h3>{{ features[0].name }}</h3>
+        <p>{{ features[0].desc }}</p>
       </li>
       <li>
-        <h3>SONOS Wireless HiFi</h3>
-        <p>
-          Each time a digital asset is purchased or sold, Sequoir is donates a percentage
-        </p>
+        <h3>{{ features[1].name }}</h3>
+        <p>{{ features[1].desc }}</p>
       </li>
     </ul>
     <figure>
@@ -28,22 +24,41 @@
     </figure>
     <ul>
       <li>
-        <h3>Samsung Multiroom</h3>
-        <p>
-          Each time a digital asset is purchased or sold, Sequoir is donates a percentage
-        </p>
+        <h3>{{ features[2].name }}</h3>
+        <p>{{ features[2].desc }}</p>
       </li>
       <li>
-        <h3>Strategy & Design</h3>
-        <p>
-          Each time a digital asset is purchased or sold, Sequoir is donates a percentage
-        </p>
+        <h3>{{ features[3].name }}</h3>
+        <p>{{ features[3].desc }}</p>
       </li>
     </ul>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+const features = [
+  {
+    name: "Apple AirPlay",
+    desc:
+      "Each time a digital asset is purchased or sold, Sequoir is donates a percentage",
+  },
+  {
+    name: "SONOS Wireless HiFi",
+    desc:
+      "Each time a digital asset is purchased or sold, Sequoir is donates a percentage",
+  },
+  {
+    name: "Samsung Multiroom",
+    desc:
+      "Each time a digital asset is purchased or sold, Sequoir is donates a percentage",
+  },
+  {
+    name: "Strategy & Design",
+    desc:
+      "Each time a digital asset is purchased or sold, Sequoir is donates a percentage",
+  },
+];
+</script>
 
 <style scoped>
 section {
