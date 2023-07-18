@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Latest Blog & Stories</h1>
+    <h2>Latest Blog & Stories</h2>
     <ul>
       <li>
         <a href="">
@@ -59,4 +59,28 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+ul {
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+}
+
+ul li a {
+  display: flex;
+  flex-direction: column;
+}
+
+figure {
+  margin: 0;
+}
+
+time {
+  position: relative;
+  bottom: 1rem;
+  left: 30%;
+  background-color: wheat;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+}
+</style>

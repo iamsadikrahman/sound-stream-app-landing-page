@@ -20,4 +20,28 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-icon {
+  font-size: 4.5rem;
+}
+
+span {
+  font-size: 1.5rem;
+  width: 65%;
+  text-align: center;
+}
+</style>

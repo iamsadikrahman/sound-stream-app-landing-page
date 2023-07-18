@@ -1,9 +1,9 @@
 <template>
   <section>
-    <div>
+    <div class="social-follow">
       <a href="#"><h2>Sound Stream</h2></a>
       <p>Follow us on</p>
-      <ul>
+      <ul class="social-icons">
         <li>
           <a href="#">
             <ion-icon name="logo-youtube"></ion-icon>
@@ -20,27 +20,27 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="footer-list">
       <ul>
-        <li><a href="#">Company</a></li>
+        <li><h3>Company</h3></li>
         <li><a href="#">About Us </a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
       </ul>
       <ul>
-        <li><a href="#">Products</a></li>
+        <li><h3>Products</h3></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Help Center </a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul>
-        <li><a href="#">Resources</a></li>
+        <li><h3>Resources</h3></li>
         <li><a href="#">FAQ’S</a></li>
         <li><a href="#">Testimonial</a></li>
         <li><a href="#">Terms & Conditions </a></li>
       </ul>
     </div>
-    <div>
+    <div class="app-download-icon">
       <a href="#">
         <img src="../assets/images/footer-1.png" alt="apple store" />
       </a>
@@ -48,10 +48,42 @@
         <img src="../assets/images/footer-2.png" alt="google play store" />
       </a>
     </div>
-    <p class="copyright">&copy; Copyrights 2023 imasadikrahman All rights reserved.</p>
+    <!-- <p class="copyright">&copy; Copyrights 2023 imasadikrahman All rights reserved.</p> -->
   </section>
 </template>
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #04000f;
+  padding: 5rem;
+}
+
+.social-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-download-icon {
+  display: flex;
+  gap: 1rem;
+}
+</style>

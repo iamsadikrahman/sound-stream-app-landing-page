@@ -1,11 +1,15 @@
 <template>
-  <Navbar />
-  <Hero />
+  <header>
+    <Navbar />
+    <Hero />
+  </header>
   <Download />
   <Features />
   <Overview />
   <Blog />
-  <Footer />
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <script setup>
@@ -18,4 +22,8 @@ import Blog from "./components/Blog.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
-<style scoped></style>
+<style scoped>
+header {
+  min-height: 100vh;
+}
+</style>

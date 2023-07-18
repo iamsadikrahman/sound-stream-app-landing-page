@@ -12,4 +12,26 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+  height: 80vh;
+}
+
+section div {
+  width: 40%;
+}
+
+figure img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+</style>
