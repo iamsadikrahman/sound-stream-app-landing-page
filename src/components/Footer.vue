@@ -48,7 +48,6 @@
         <img src="../assets/images/footer-2.png" alt="google play store" />
       </a>
     </div>
-    <!-- <p class="copyright">&copy; Copyrights 2023 imasadikrahman All rights reserved.</p> -->
   </section>
 </template>
 

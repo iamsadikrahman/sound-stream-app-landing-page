@@ -2,20 +2,46 @@
   <nav>
     <h2>Sound Stream</h2>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="">Features</a></li>
-      <li><a href="">Overview</a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="">Pricing</a></li>
-      <li><a href="">FAQ's</a></li>
       <li>
-        <button><a href="">Get started</a></button>
+        <a href="#">{{ navItems[0] }}</a>
+      </li>
+      <li>
+        <a href="">{{ navItems[1] }}</a>
+      </li>
+      <li>
+        <a href="">{{ navItems[2] }}</a>
+      </li>
+      <li>
+        <a href="">{{ navItems[3] }}</a>
+      </li>
+      <li>
+        <a href="">{{ navItems[4] }}</a>
+      </li>
+      <li>
+        <a href="">{{ navItems[5] }}</a>
+      </li>
+      <li>
+        <button>
+          <a :href="getStartedUrl">{{ navItems[6] }}</a>
+        </button>
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+const navItems = [
+  "Home",
+  "Features",
+  "Overview",
+  "Blog",
+  "Pricing",
+  "FAQ's",
+  "Get started",
+];
+
+const getStartedUrl = "https://google.com";
+</script>
 
 <style scoped>
 nav,
